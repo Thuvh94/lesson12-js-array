@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>practice_find_element_in_array</title>
+</head>
+<body>
+<!--Mô tả-->
+<!--Viết một chương trình JavaScript để tìm một giá tri được nhập vào từ hộp thoại có nằm trong mảng hay không. -->
+<!--Nếu có in ra vị trí của phần tử đó.-->
+<script>
+    let value=+prompt("Enter a number");
+    let numbers=[2,20,68,1994,25,9];
+    for (let i = 0; i <numbers.length ; i++) {
+        if(value===numbers[i]){
+            document.write("Value " + numbers[i] + " found at " + i);
+        }
+
+    }
+</script>
+</body>
+</html>
