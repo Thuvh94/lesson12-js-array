@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task1-5</title>
+</head>
+<body>
+<!--Bài 5- Viết chương trình đếm số nguyên âm trong một chuỗi-->
+<script>
+    let numbers=[4,7,9,-6,90,-7,-50,-66,89,30,33];
+    let count=0;
+    let negative=[];
+    let x=0;
+    for (let i = 0; i < numbers.length; i++) {
+        if(numbers[i]<0){
+            count++;
+            negative[x]=numbers[i];
+            x++;
+        }
+    }document.write("Có " + count +" số nguyên âm trong mảng, bao gồm " + negative);
+</script>
+</body>
+</html>

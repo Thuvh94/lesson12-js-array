@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task1-6</title>
+</head>
+<body>
+<!--Bài 6- Viết chương trình khởi tạo/nhập vào một mảng số nguyên gồm 10 phần tử, -->
+<!--nhập/tạo phần tử số nguyên V. Chương trình tìm xem V có nằm trong mảng số nguyên không?-->
+<!--Nếu V thuộc mảng số nguyên thì in ra "V is in the array" còn lại in ra "V is not in the array".-->
+<script>
+    let numbers = [4, 7, 9, -6, 90, -7, -50, -66, 89, 30];
+    let belong = 0;
+    isInArray(numbers);
+
+    function isInArray(numbers) {
+        let value = +prompt("Insert a number");
+        for (let i = 0; i < numbers.length; i++) {
+            if (value === numbers[i]){
+                alert(value + " is in the array");
+                belong++;
+            }
+        } if (belong===0) alert(value + " is not in the array");
+    }
+
+</script>
+</body>
+</html>

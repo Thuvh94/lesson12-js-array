@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task1-2&3</title>
+</head>
+<body>
+<!--Bài 2- Viết chương trình khởi tạo mảng số nguyên gồm 10 phần tử khác nhau.-->
+<!--Chương trình hiển thị ra được phần tử có giá trị lớn nhất trong mảng và vị trí của phần tử đó.-->
+<!--Bài 3- Viết chương trình khởi tạo mảng số -->
+<!--Hiển hiện giá trị lớn nhất trong mảng đó. In ra giá trị trung bình của các phần tử trong mảng.-->
+<script>
+    let numbers=[5,8,1,0,56,43,3,8,99,23];
+    findMaxAndPosition(numbers);
+    displayAverage(numbers);
+    function findMaxAndPosition(numbers) {
+        let max=numbers[0];
+        let index=0;
+        for (let i = 0; i < numbers.length; i++) {
+            if(numbers[i]>max){
+                max=numbers[i];
+                index=i;
+            }
+        } document.write("Max value in array is " + max +" at position " + index +"<br>");
+    }
+    function displayAverage() {
+        let sum=0;
+        let average=0;
+        for (let i = 0; i < numbers.length; i++) {
+            sum+=numbers[i];
+            average=sum/numbers.length;
+        }document.write("Average of array is " + average);
+    }
+
+
+</script>
+
+</body>
+</html>

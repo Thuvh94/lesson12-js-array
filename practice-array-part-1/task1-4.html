@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task1-4</title>
+</head>
+<body>
+<!--Bài 4- Viết chương trình khởi tạo/nhập vào một mảng số nguyên và đảo ngược các phần tử trong mảng đó.-->
+<script>
+    let numbers=[5,8,1,0,56,43,3,8,99,23];
+    reverse(numbers);
+    function reverse(numbers) {
+        let first=0;
+        let last=numbers.length-1;
+        let x;
+        while (first<last) {
+            x=numbers[first];
+            numbers[first]=numbers[last];
+            numbers[last]=x;
+            first++;
+            last--;
+        }document.write(numbers);
+    }
+
+</script>
+</body>
+</html>
