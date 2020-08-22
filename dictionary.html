@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dictionary</title>
+</head>
+<body>
+<!--Phát triển một ứng dụng từ điển đơn giản. -->
+<!--Ứng dụng cho phép tra cứu các từ tiếng Anh sang tiếng Việt.-->
+<!--Danh sách các từ được lưu trữ trong các mảng.-->
+
+<h1>EN-VN Dictionary</h1>
+<input type="text" id="input">
+<input type="button" id="button" value="Look up" onclick="lookUp()">
+<p id="result"></p>
+<script>
+    function lookUp() {
+        let en = ["mother", "father", "sister", "brother"];
+        let vn = ["mẹ", "bố", "chị em gái", "anh em trai"];
+        let value = document.getElementById("input").value;
+        let result = '';
+        for (let i = 0; i < en.length; i++) {
+            if(value === en[i]) {
+               result = "Ý nghĩa: " + vn[i] + ".";
+               break;
+            } else if (value === vn[i]){
+                result = "Meaning: " + en[i]+".";
+                break;
+            } else {
+                result = "Không có từ bạn tìm";
+            }
+        }
+        document.getElementById('result').innerHTML = result;
+    }
+
+
+</script>
+</body>
+</html>

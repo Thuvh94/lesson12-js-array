@@ -7,23 +7,21 @@
 <body>
 <!--Bài 8- Viết chương trình khởi tạo/nhập vào một mảng số nguyên gồm 10 phần tử.-->
 <!--Chương trình sắp xếp mảng theo thứ tự giảm dần và hiển thị ra mảng đã được sắp xếp.-->
-<!--Thuật toán: duyệt mảng tìm số lớn nhất trong mảng. gán số lớn nhất là phần tử 0 trong mảng mới.-->
-<!--// duyệt tiếp mảng đó trong mảng cũ chạy từ length-1++ để tìm ra max, lại gán là phần thử 1 trong mảng mới.-->
+<!--Thuật toán: So sánh từng phần tử trong mảng với các phần tử còn lại, nếu có số nào lớn hơn nó thì HOÁN VỊ.-->
 <script>
     let numbers=[4,7,9,-6,90,-7,-50,-66,89,30];
-    let max=numbers[0];
-    let sort=[];
-    let x=0;
-    for (let i = 0; i <numbers.length ; i++) {
-        for (let j = 1; j < ; j++) {
+    let size=numbers.length;
+    let temp=0;
+    for (let i = 0; i < size-1; i++) {
+        for (let j = i+1; j <size ; j++) {
+            if(numbers[i]<numbers[j]){
+                temp=numbers[i];
+                numbers[i]=numbers[j];
+                numbers[j]=temp;
+            }
+        }
+    } document.write("Sorted array is "+numbers);
 
-        }
-        if (max < numbers[i]){
-           max = numbers[i];
-           sort[x]=max;
-           x++
-        }
-    }
 </script>
 </body>
 </html>

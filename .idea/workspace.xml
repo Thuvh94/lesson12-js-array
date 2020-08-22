@@ -20,9 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ec15c33a-2ca8-4247-a462-4e4f91306588" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/practice-create-array.html" beforeDir="false" afterPath="$PROJECT_DIR$/practice-create-array.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice-find-element-in-array.html" beforeDir="false" afterPath="$PROJECT_DIR$/practice-find-element-in-array.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/practice-reverse-elements-in-array.html" beforeDir="false" afterPath="$PROJECT_DIR$/practice-reverse-elements-in-array.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practice-array-part-1/task1-8.html" beforeDir="false" afterPath="$PROJECT_DIR$/practice-array-part-1/task1-8.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +63,8 @@
       <workItem from="1597914754064" duration="5541000" />
       <workItem from="1597920976441" duration="642000" />
       <workItem from="1597936133593" duration="5871000" />
-      <workItem from="1597972732934" duration="322000" />
+      <workItem from="1597972732934" duration="13295000" />
+      <workItem from="1598065184190" duration="12626000" />
     </task>
     <servers />
   </component>
