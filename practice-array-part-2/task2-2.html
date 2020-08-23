@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task2-2</title>
+</head>
+<body>
+<!--Bài 2: Viết một chương trình để in các ký tự trong một mảng theo thứ tự đảo ngược.-->
+<!--Ví dụ, nếu một mảng chứa các ký tự  [ 'c', 's', 'c', '2', '6', '1' ] sau khi thực hiện đảo ngược sẽ là "162csc"   -->
+<script>
+    let arr = [ 'c', 's', 'c', '2', '6', '1' ];
+    let size = arr.length;
+    let element;
+    for (let i = 0; i < size/2; i++) {
+        element = arr[i];
+        arr[i] = arr[size-i-1];
+        arr[size-i-1] = element;
+    } document.write(arr.join(''));
+</script>
+</body>
+</html>

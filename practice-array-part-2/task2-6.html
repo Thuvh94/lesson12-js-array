@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task2-6</title>
+</head>
+<body>
+<!--Bài 6: Viết chương trình nhập vào một mảng ký tự,
+ tìm tất cả các ký tự trong mảng là (-) và thay thế các ký tự này bởi ký tự ( _ )-->
+
+<script>
+let length = +prompt ("Insert your array length");
+let arr = [];
+for (let i = 0; i < length; i++) {
+    let element = prompt("Insert your " + (i+1) + " element");
+    arr [i] = element ;
+    if (arr[i]==="-"){
+        arr [i]="_";
+    }
+} document.write("Your array after being changed from - to _ is " + arr);
+
+
+</script>
+</body>
+</html>

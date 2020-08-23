@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task2-5</title>
+</head>
+<body>
+<!--Bài 5: Viết một chương trình nhập vào 2 chuỗi, sau đó kiểm tra xem hai chuỗi có giống nhau hay không.-->
+<input type="text" id="firstStr" placeholder="Insert the first string">
+<input type="text" id="secondStr" placeholder="Insert the second string">
+<button onclick="check()">Check</button>
+<script>
+    function check() {
+        let firstStr = document.getElementById("firstStr").value;
+        let secondStr = document.getElementById("secondStr").value;
+        if (firstStr === secondStr)
+            document.write("Your two strings are the same");
+        else
+            document.write("Yout two strings are different from each other.");
+    }
+</script>
+</body>
+</html>
